@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Las Catacumbas de Ceniza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Marcadores del SDK de WebAssembly de .NET: no los quites -->
+  <link href="_framework/dotnet.byk782f569.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-LRrFFfOLcP3rbkeH6XnXkkiIUJwJV14QPIZg4JXwQwg=" />
+  <script type="importmap">{
+  "imports": {
+    "./_framework/dotnet.js": "./_framework/dotnet.byk782f569.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.jn1jv9aeht.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v2rwe8u38b.js",
+    "./main.js": "./m.qfoi1ctsxwain.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/dotnet.byk782f569.js": "sha256-LRrFFfOLcP3rbkeH6XnXkkiIUJwJV14QPIZg4JXwQwg=",
+    "./_framework/dotnet.js": "sha256-LRrFFfOLcP3rbkeH6XnXkkiIUJwJV14QPIZg4JXwQwg=",
+    "./_framework/dotnet.native.jn1jv9aeht.js": "sha256-H/JqLy8E2SoYNvIxIei8Z2xcqqGS4T6dmn4zdIoATHI=",
+    "./_framework/dotnet.native.js": "sha256-H/JqLy8E2SoYNvIxIei8Z2xcqqGS4T6dmn4zdIoATHI=",
+    "./_framework/dotnet.runtime.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./_framework/dotnet.runtime.v2rwe8u38b.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./m.qfoi1ctsxwain.js": "sha256-Nm27B7ZP5wVRuM93nxUgmaWJTrFt5c8gUiLAolMGPS4=",
+    "./main.js": "sha256-Nm27B7ZP5wVRuM93nxUgmaWJTrFt5c8gUiLAolMGPS4="
+  }
+}</script>
+  <script type="module" src="m.qfoi1ctsxwain.js"></script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="lbl"></canvas>
+<div id="fx-vignette"></div>
+<div id="fx-low"></div>
+<div id="fx-hurt"></div>
+
+<div id="hud" class="hidden">
+  <div id="hud-top"></div>
+  <div id="hud-bot"></div>
+</div>
+
+<div id="ui" class="hidden"><div id="ui-stage"></div></div>
+
+<div id="prompt" class="hidden">
+  <div class="pbox"><div class="pane-title"><span>Catacumbas de Ceniza</span></div><p>…</p><input type="text" maxlength="40" autocomplete="off" spellcheck="false"><button>Aceptar</button><small>Enter para aceptar · Esc para dejar el valor por defecto</small></div>
+</div>
+<div id="tip" class="hidden"></div>
+<div id="conn"><b>Cargando Las Catacumbas de Ceniza…</b><span>La primera vez se descarga el motor de .NET (unos MB); después queda en caché.</span></div>
+
+<script>window.CATACUMBAS_STATIC = true;</script>
+<script src="js/util.js"></script>
+<script src="js/voxel.js"></script>
+<script src="js/models.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/world.js"></script>
+<script src="js/title.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
